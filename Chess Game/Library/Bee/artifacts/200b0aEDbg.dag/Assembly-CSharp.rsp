@@ -360,6 +360,7 @@
 "Assets/Scripts/Enums/PieceType.cs"
 "Assets/Scripts/Enums/TeamColor.cs"
 "Assets/Scripts/Piece.cs"
+"Assets/Scripts/PieceCreator.cs"
 "Assets/Scripts/Pieces/Bishop.cs"
 "Assets/Scripts/Pieces/King.cs"
 "Assets/Scripts/Pieces/Knight.cs"

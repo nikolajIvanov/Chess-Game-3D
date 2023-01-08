@@ -9,8 +9,8 @@ using UnityEngine;
 */
 [CreateAssetMenu(menuName = "Scriptable Objects/Board/Layout")]
 /*
- * Diese Klasse wird zu Beginn eines Schachspiels ausgeführt, damit das Schachbrett mit allen nötigen Figuren geladen
- * wird.
+ * Diese Klasse wird zu Beginn eines Schachspiels von der Klasse "ChessGameController" ausgeführt,
+ * damit das Schachbrett mit allen nötigen Figuren geladen wird.
  */
 public class BoardLayout : ScriptableObject
 {
@@ -32,7 +32,7 @@ public class BoardLayout : ScriptableObject
         return boardSquares.Length;
     }
 
-    public Vector2Int GetSquareCoordsAtIndies(int index)
+    public Vector2Int GetSquareCoordsAtIndex(int index)
     {
         if (boardSquares.Length <= index)
         {
@@ -43,7 +43,7 @@ public class BoardLayout : ScriptableObject
         return new Vector2Int(boardSquares[index].position.x - 1, boardSquares[index].position.y -1);
     }
 
-    public string GetSquarePieceNameAtIndies(int index)
+    public string GetSquarePieceNameAtIndex(int index)
     {
         if (boardSquares.Length <= index)
         {
