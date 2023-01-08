@@ -2,10 +2,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Gibt die Möglichkeit Scriptable Objects zu erstellen.
+ * Dafür geht man in Unity bei den Assets Rechtsklick-> Create -> Scriptable Objects -> Board -> Layout
+ * Wir nutzen das, damit zu Beginn die Figuren richtig aufs Board gesetzt werden 
+*/
 [CreateAssetMenu(menuName = "Scriptable Objects/Board/Layout")]
-public class BoardLayout : MonoBehaviour
+/*
+ * Diese Klasse wird zu Beginn eines Schachspiels ausgeführt, damit das Schachbrett mit allen nötigen Figuren geladen
+ * wird.
+ */
+public class BoardLayout : ScriptableObject
 {
+    /*
+     * Warum wird diese Klasse in einer Klasse geschrieben?
+     */
     [Serializable]
     private class BoardSquareSetup
     {

@@ -8,6 +8,10 @@ public enum PieceType
     //          Use enums when you habe values that you know will not change,
     //          To get the integer value from an item, you must explicitly convert to an int
     
-    // Bauer, Läufer, Springer, Turn, Dame, König
-    Pwan, Bishop, Knight, Rook, Queen, King
+    Pwan, // Bauer
+    Bishop, // Läufer
+    Knight, // Springer
+    Rook, // Turm
+    Queen, // Dame
+    King // König
 }
