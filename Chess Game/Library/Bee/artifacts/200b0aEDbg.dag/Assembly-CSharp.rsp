@@ -366,9 +366,9 @@
 "Assets/Scripts/Chess Game/Pieces/Rook.cs"
 "Assets/Scripts/Chess Game/PiecesCreator.cs"
 "Assets/Scripts/Chess Game/SquareSelectorCreator.cs"
-"Assets/Scripts/Enums/PieceType.cs"
-"Assets/Scripts/Enums/TeamColor.cs"
-"Assets/Scripts/PieceCreator.cs"
+"Assets/Scripts/Input System/IInputHandler.cs"
+"Assets/Scripts/Input System/InputReciever.cs"
+"Assets/Scripts/Tweeners/InstantTweener.cs"
 "Assets/Scripts/Tweeners/IObjectTweener.cs"
 "Assets/Scripts/Utils/MaterialSetter.cs"
 -langversion:9.0

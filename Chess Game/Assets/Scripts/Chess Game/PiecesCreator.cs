@@ -8,7 +8,7 @@ public class PiecesCreator : MonoBehaviour
     [SerializeField] private GameObject[] piecesPrefabs;
     [SerializeField] private Material blackMaterial;
     [SerializeField] private Material whiteMaterial;
-    
+
     // Wird zum mappgen von Prefab piece type name zu dem prefab. Hilft uns die richtige Figur zu finden
     private Dictionary<string, GameObject> nameToPieceDict = new Dictionary<string, GameObject>();
 
@@ -32,7 +32,6 @@ public class PiecesCreator : MonoBehaviour
             GameObject newPiece = Instantiate(prefab);
             return newPiece;
         }
-
         return null;
     }
 

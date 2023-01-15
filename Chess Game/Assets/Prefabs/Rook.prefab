@@ -95,7 +95,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 114028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5479bd29ec2534522997c4c9eb45e813, type: 3}
+  m_Script: {fileID: 11500000, guid: a9434c713ad1241ce92d82e9542d5ba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &-503384327851100657
@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9eda1d30431c4ec98419b9ac7f8601f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _meshRenderer: {fileID: 0}
 --- !u!114 &6723783124735288388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,4 +123,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98938cc5ef9c47f9b4d87cab06cb5a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialSetter: {fileID: 0}
   availableMoves: []

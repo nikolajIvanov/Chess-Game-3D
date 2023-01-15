@@ -2,6 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+public enum TeamColor
+{
+    Black, White
+}
+
+public enum PieceType
+{
+    Pawn, Bishop, Knight, Rook, Queen, King
+}
 /*
  * Gibt die Möglichkeit Scriptable Objects zu erstellen.
  * Dafür geht man in Unity bei den Assets Rechtsklick-> Create -> Scriptable Objects -> Board -> Layout
@@ -32,36 +42,17 @@ public class BoardLayout : ScriptableObject
         return boardSquares.Length;
     }
 
+
     public Vector2Int GetSquareCoordsAtIndex(int index)
     {
-        if (boardSquares.Length <= index)
-        {
-            Debug.LogError("Index of piece is out of range");
-            return new Vector2Int(-1, -1);
-        }
-
-        return new Vector2Int(boardSquares[index].position.x - 1, boardSquares[index].position.y -1);
+        return new Vector2Int(boardSquares[index].position.x - 1, boardSquares[index].position.y - 1);
     }
-
     public string GetSquarePieceNameAtIndex(int index)
     {
-        if (boardSquares.Length <= index)
-        {
-            Debug.LogError("Index of piece is out of range");
-            return "";
-        }
-
         return boardSquares[index].pieceType.ToString();
     }
-
     public TeamColor GetSquareTeamColorAtIndex(int index)
     {
-        if (boardSquares.Length <= index)
-        {
-            Debug.LogError("Index of piece is out of range");
-            return TeamColor.Black;
-        }
-
         return boardSquares[index].teamColor;
     }
 }

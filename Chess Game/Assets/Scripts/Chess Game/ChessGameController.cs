@@ -17,15 +17,11 @@ public class ChessGameController : MonoBehaviour
     [SerializeField] private Board board; // Referenz zur Klasse Board
     
     private PiecesCreator pieceCreator; // Referenz zur Klasse PiecesCreator
-    //private ChessPlayer whitePlayer;
-    //private ChessPlayer blackPlayer;
-    //private ChessPlayer activePlayer;
-    
+
 
     private void Awake()
     {
         SetDependencies();
-        //CreatePlayer();
     }
 
     private void SetDependencies()
@@ -35,13 +31,7 @@ public class ChessGameController : MonoBehaviour
          */
         pieceCreator = GetComponent<PiecesCreator>();
     }
-/*
-    public void CreatePlayer()
-    {
-        whitePlayer = new ChessPlayer(TeamColor.White, board);
-        blackPlayer = new ChessPlayer(TeamColor.Black, board);
-    }
-*/
+
     // Jedes Spiel wird aus dieser Klasse gestartet
     void Start()
     {
@@ -51,8 +41,6 @@ public class ChessGameController : MonoBehaviour
     private void StartNewGame()
     {
         CreatePiecesFromLayout(startingBoardLayout);
-        //activePlayer = whitePlayer;
-        //GenerateAllPossiblePlayerMoves(activePlayer);
     }
 
     // Hier wird das Boardlayout erstellt
@@ -81,8 +69,4 @@ public class ChessGameController : MonoBehaviour
         newPiece.SetMaterial(teamMaterial);
     }
     
-    private void GenerateAllPossiblePlayerMoves(ChessPlayer player)
-    {
-        // player.GenerateAllPossibleMoves();
-    }
 }

@@ -6,16 +6,18 @@ using UnityEngine;
 [RequireComponent(typeof(MaterialSetter))]
 public abstract class Piece : MonoBehaviour
 {
-    private MaterialSetter materialSetter; // Referenz zur Klasse MaterialSetter
-    public Board board {protected get; set; }
+    [SerializeField] private MaterialSetter materialSetter; // Referenz zur Klasse MaterialSetter
+    public Board board { protected get; set; }
     public Vector2Int occupiedSquare { get; set; }
     public TeamColor team { get; set; }
     public bool hasMoved { get; private set; }
+    
     public List<Vector2Int> availableMoves; // Liste mit allen Bewegungsmöglichkeiten der einzelnen Figuren
+    
     private IObjectTweener tweener;
     public abstract List<Vector2Int> SelectAvailableSquares();
 
-    public void Awake()
+    private void Awake()
     {
         availableMoves = new List<Vector2Int>();
         tweener = GetComponent<IObjectTweener>();
@@ -23,13 +25,9 @@ public abstract class Piece : MonoBehaviour
         hasMoved = false;
     }
 
-    public void SetMaterial(Material material)
+    public void SetMaterial(Material selectedMaterial)
     {
-        if (materialSetter == null)
-        {
-            materialSetter = GetComponent<MaterialSetter>();
-        }
-        materialSetter.SetSingleMaterial(material);
+        materialSetter.SetSingleMaterial(selectedMaterial);
     }
 
     public bool IsFromSameTeam(Piece piece)
