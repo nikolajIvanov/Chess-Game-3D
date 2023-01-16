@@ -366,6 +366,7 @@
 "Assets/Scripts/Chess Game/Pieces/Rook.cs"
 "Assets/Scripts/Chess Game/PiecesCreator.cs"
 "Assets/Scripts/Chess Game/SquareSelectorCreator.cs"
+"Assets/Scripts/Input System/ColliderInputRecieved.cs"
 "Assets/Scripts/Input System/IInputHandler.cs"
 "Assets/Scripts/Input System/InputReciever.cs"
 "Assets/Scripts/Tweeners/InstantTweener.cs"
