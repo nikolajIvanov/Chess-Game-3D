@@ -41,6 +41,7 @@ public class ChessGameController : MonoBehaviour
          */
         pieceCreator = GetComponent<PiecesCreator>();
     }
+    
 
     // Jedes Spiel wird aus dieser Klasse gestartet
     void Start()
@@ -50,6 +51,7 @@ public class ChessGameController : MonoBehaviour
 
     private void StartNewGame()
     {
+        board.SetDependencies(this);
         CreatePiecesFromLayout(startingBoardLayout);
         activePlayer = whitePlayer; // Im Schach fängt der Spieler mit den weißen Figuren an
         GenerateAllPossibleMoves(activePlayer); // Wird benötigt, damit der Spieler direkt zu Beginn alle Züge nutzen kann
@@ -79,11 +81,38 @@ public class ChessGameController : MonoBehaviour
 
         Material teamMaterial = pieceCreator.GetTeamMaterial(team);
         newPiece.SetMaterial(teamMaterial);
+        
+        board.SetPieceOnBoard(squareCoords, newPiece);
+
+        ChessPlayer currentPlayer = team == TeamColor.White ? whitePlayer : blackPlayer;
+        currentPlayer.AddPiece(newPiece);
     }
     
     private void GenerateAllPossibleMoves(ChessPlayer player)
     {
         // Erklärung siehe Klasse ChessPlayer Methode GenerateAllPossibleMoves()
         player.GenerateAllPossibleMoves();
+    }
+    
+    public bool IsTeamTurnActive(TeamColor team)
+    {
+        return activePlayer.team == team;
+    }
+    
+    public void EndTurn()
+    {
+        GenerateAllPossibleMoves(activePlayer);
+        GenerateAllPossibleMoves(GetOpponentToPlayer(activePlayer));
+        ChangeActiveTeam();
+    }
+
+    private void ChangeActiveTeam()
+    {
+        activePlayer = activePlayer == whitePlayer ? blackPlayer : whitePlayer;
+    }
+
+    private ChessPlayer GetOpponentToPlayer(ChessPlayer player)
+    {
+        return player == whitePlayer ? blackPlayer : whitePlayer;
     }
 }

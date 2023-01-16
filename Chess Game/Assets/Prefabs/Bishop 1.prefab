@@ -4857,8 +4857,9 @@ GameObject:
   - component: {fileID: -1654343276657228791}
   - component: {fileID: 7045260390642670822}
   - component: {fileID: 3693144074746146497}
+  - component: {fileID: -4282070744942432506}
   m_Layer: 0
-  m_Name: bishop 1
+  m_Name: Bishop 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4980,6 +4981,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materialSetter: {fileID: 0}
   availableMoves: []
+--- !u!114 &-4282070744942432506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3034483395260628797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9434c713ad1241ce92d82e9542d5ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3043496028942974939
 GameObject:
   m_ObjectHideFlags: 0

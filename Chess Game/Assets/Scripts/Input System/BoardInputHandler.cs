@@ -10,11 +10,11 @@ public class BoardInputHandler : MonoBehaviour, IInputHandler
 
     private void Awake()
     {
-        throw new NotImplementedException();
+        board = GetComponent<Board>();
     }
 
     public void ProcessInput(Vector3 inputPosition, GameObject selectedObject, Action onClick)
     {
-        throw new NotImplementedException();
+        board.OnSquareSelected(inputPosition);
     }
 }

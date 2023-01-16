@@ -366,13 +366,20 @@
 "Assets/Scripts/Chess Game/Pieces/Rook.cs"
 "Assets/Scripts/Chess Game/PiecesCreator.cs"
 "Assets/Scripts/Chess Game/SquareSelectorCreator.cs"
+"Assets/Scripts/Input System/AudioInputHandler.cs"
 "Assets/Scripts/Input System/BoardInputHandler.cs"
 "Assets/Scripts/Input System/ColliderInputRecieved.cs"
+"Assets/Scripts/Input System/DebugInputHandler.cs"
 "Assets/Scripts/Input System/IInputHandler.cs"
 "Assets/Scripts/Input System/InputReciever.cs"
+"Assets/Scripts/Input System/UIInputHandler.cs"
+"Assets/Scripts/Input System/UIInputReciever.cs"
+"Assets/Scripts/Tweeners/ArcTweener.cs"
 "Assets/Scripts/Tweeners/InstantTweener.cs"
 "Assets/Scripts/Tweeners/IObjectTweener.cs"
+"Assets/Scripts/Tweeners/LineTweener.cs"
 "Assets/Scripts/Utils/MaterialSetter.cs"
+"Assets/Scripts/Utils/UIButton.cs"
 -langversion:9.0
 
 /deterministic
