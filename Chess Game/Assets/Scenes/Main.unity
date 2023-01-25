@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingBoardLayout: {fileID: 11400000, guid: cb1699366d7964e6eb3f6e5aa423630d, type: 2}
   board: {fileID: 2350278297741284932}
-  UIManager: {fileID: 0}
+  UIManager: {fileID: 388633356}
 --- !u!114 &1082157705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecesPrefabs:
-  - {fileID: 190264, guid: 29f8de3d0fc3049279059b1553e89f6e, type: 3}
+  - {fileID: 3034483395260628797, guid: dfcfc33866ea74338b2c790f33361dc6, type: 3}
   - {fileID: 119820, guid: b6124107dff3d4522b170fbce1d75b23, type: 3}
   - {fileID: 107724, guid: 15cf785e7ce1b40b3955196099013ff4, type: 3}
   - {fileID: 104878, guid: 3d54773baf4d8401d9fede1cb1fb95cc, type: 3}
@@ -488,6 +488,8 @@ MonoBehaviour:
   - {fileID: 114028, guid: 7f2d8f90729b14283931864fa16486cd, type: 3}
   blackMaterial: {fileID: 2100000, guid: 569bf3a19e665448f80e6fa8ae353e00, type: 2}
   whiteMaterial: {fileID: 2100000, guid: 485622e498ab049a89ecf958002dfab3, type: 2}
+  blackMaterialSet: {fileID: 11400000, guid: e51fb1b0434c83e44b0ae5bd717d7acb, type: 2}
+  whiteMaterialSet: {fileID: 11400000, guid: a68ff2e0ef4ca6742b163e75d8156874, type: 2}
 --- !u!4 &1082157706
 Transform:
   m_ObjectHideFlags: 0

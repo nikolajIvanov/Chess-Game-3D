@@ -4966,6 +4966,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9eda1d30431c4ec98419b9ac7f8601f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialAssignments:
+  - materialID: 0
+    affectedRenderers:
+    - meshRenderer: {fileID: 1745524646206652262}
+      materialSlot: 0
+    - meshRenderer: {fileID: 9188588010766346506}
+      materialSlot: 0
+    - meshRenderer: {fileID: 6791770133712559924}
+      materialSlot: 0
+    - meshRenderer: {fileID: 2136869416318369412}
+      materialSlot: 0
+    - meshRenderer: {fileID: 473615236227203579}
+      materialSlot: 0
+    - meshRenderer: {fileID: 7651105193557241246}
+      materialSlot: 0
+  - materialID: 1
+    affectedRenderers:
+    - meshRenderer: {fileID: 301223782935585479}
+      materialSlot: 0
+    - meshRenderer: {fileID: 473615236227203579}
+      materialSlot: 1
+  - materialID: 2
+    affectedRenderers:
+    - meshRenderer: {fileID: 5082472238767041871}
+      materialSlot: 0
+    - meshRenderer: {fileID: 5444941547983344620}
+      materialSlot: 0
+    - meshRenderer: {fileID: 3411916544989128837}
+      materialSlot: 0
+    - meshRenderer: {fileID: 39430383369691780}
+      materialSlot: 0
+    - meshRenderer: {fileID: 5403743307536180416}
+      materialSlot: 0
+    - meshRenderer: {fileID: 1121855545953973590}
+      materialSlot: 0
+    - meshRenderer: {fileID: 1288800405932589613}
+      materialSlot: 0
+    - meshRenderer: {fileID: 2949881552127500057}
+      materialSlot: 0
+    - meshRenderer: {fileID: 8065245861474074591}
+      materialSlot: 0
+    - meshRenderer: {fileID: 102918533008456040}
+      materialSlot: 0
+    - meshRenderer: {fileID: 4487187152046202141}
+      materialSlot: 0
+    - meshRenderer: {fileID: 7577059366244681740}
+      materialSlot: 0
+    - meshRenderer: {fileID: 5314310056174119014}
+      materialSlot: 0
   _meshRenderer: {fileID: 0}
 --- !u!114 &3693144074746146497
 MonoBehaviour:

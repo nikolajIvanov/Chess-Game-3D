@@ -8,6 +8,9 @@ public class PiecesCreator : MonoBehaviour
     [SerializeField] private GameObject[] piecesPrefabs;
     [SerializeField] private Material blackMaterial;
     [SerializeField] private Material whiteMaterial;
+    [SerializeField] private MaterialSet blackMaterialSet;
+    [SerializeField] private MaterialSet whiteMaterialSet;
+
 
     // Wird zum mappgen von Prefab piece type name zu dem prefab. Hilft uns die richtige Figur zu finden
     private Dictionary<string, GameObject> nameToPieceDict = new Dictionary<string, GameObject>();
@@ -39,5 +42,11 @@ public class PiecesCreator : MonoBehaviour
     {
         // Übergabe der Farbe; Abhängig vom Parameter team 
         return team == TeamColor.White ? whiteMaterial : blackMaterial;
+    }
+
+    public MaterialSet GetTeamMaterialSet(TeamColor team)
+    {
+        // Übergabe der Farbe; Abhängig vom Parameter team 
+        return team == TeamColor.White ? whiteMaterialSet : blackMaterialSet;
     }
 }

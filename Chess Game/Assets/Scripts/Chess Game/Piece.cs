@@ -30,6 +30,11 @@ public abstract class Piece : MonoBehaviour
         materialSetter.SetSingleMaterial(selectedMaterial);
     }
 
+    public void SetMaterialSet(MaterialSet materialSet)
+    {
+        materialSetter.SetMaterialSet(materialSet);
+    }
+
     public bool IsFromSameTeam(Piece piece)
     {
         return team == piece.team;

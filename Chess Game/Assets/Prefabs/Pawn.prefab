@@ -110,6 +110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9eda1d30431c4ec98419b9ac7f8601f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialAssignments:
+  - materialID: 0
+    affectedRenderers:
+    - meshRenderer: {fileID: 2328314}
+      materialSlot: 0
   _meshRenderer: {fileID: 0}
 --- !u!114 &147344382797589348
 MonoBehaviour:
